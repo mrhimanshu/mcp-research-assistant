@@ -1,0 +1,18 @@
+{
+    "mcpServers": {
+        "weather": {
+            "command": "uv",
+            "args": ["run",
+                    "--directory",
+                    "/Users/himanshu./Desktop/working/work/MCP_Tutorial/mcp-server-agent",
+                    "weather_server.py"]
+        },
+        "match_server": {
+            "command": "uv",
+            "args": ["run",
+                    "--directory",
+                    "/Users/himanshu./Desktop/working/work/MCP_Tutorial/mcp-server-agent",
+                    "math_server.py"]
+        }
+    }
+}
