@@ -28,6 +28,22 @@ async def get_forecast(location: str) -> str:
         for day in data["weather"][:3]:
             result += f"{day['date']}: {day['mintempC']}-{day['maxtempC']}°C\n"
         return result
+    
+# Add a dynamic greeting resource
+@mcp.resource("greeting://{name}")
+def get_greeting(name: str) -> str:
+    """Get a personalized greeting"""
+    return f"Hello, {name}!"
+
+@mcp.prompt()
+def personalized_job_recommender() -> str:
+    """
+    Use prompt to give bollean output.
+    """
+
+    # Step 1: Return a prompt string with instructions for personalized job recommendations
+    return """Give 5 word output
+            """
 
 if __name__ == "__main__":
 #    mcp.run(transport="streamable-http", port=8001)

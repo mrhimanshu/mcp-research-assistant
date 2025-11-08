@@ -2,7 +2,7 @@
     "research_server": {
         "command": "uv",
         "args": ["--directory",
-                "D:\\Courses\\Udemy\\MCP Mastery - Claude and LangChain\\09 Research Assistant with MCP and LangGraph",
+                "/Users/himanshu./Desktop/working/work/MCP_Tutorial/research-assistant-mcp",
                 "run",
                 "server.py"],
         "transport": "stdio"
